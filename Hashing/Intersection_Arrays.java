@@ -4,8 +4,8 @@ import java.util.HashMap;
 
 public class Intersection_Arrays {
     public static void main(String[] args) {
-        int [] a = {1,2,2,1};
-        int [] b = {2,2};
+        int [] a = {1,3,7,9,4,6,9,0,6,3,2,5,7,8,9,6,4,2};
+        int [] b = {3,6,3,8,2,5,3,1};
         //int [] res = 
         intersection(a,b);
     }
@@ -24,7 +24,7 @@ public class Intersection_Arrays {
         System.out.println(HM);
         for(int ali : nums1){
             if(HM.containsKey(ali)){
-                System.out.println(ali);
+                System.out.print(ali+" ");
                 int prevFreq = HM.get(ali);
                 HM.put(ali,prevFreq-1);
             }
